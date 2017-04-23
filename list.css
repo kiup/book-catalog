@@ -1,0 +1,81 @@
+@media print{
+    #section{
+        visibility: hidden;
+        display: none;
+    }
+    button{
+        visibility: hidden;
+        display: none;
+    }
+    #sectionprint{
+        display: inherit !important;
+        visibility: visible !important;
+    }
+}
+#sectionprint{
+    visibility: hidden;
+    display: none;
+}
+body{
+    background-color: lightsteelblue;
+    font-family: Courier;
+}
+h3{
+    color: white;
+    text-align: center;
+    padding-bottom: 2%;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+}
+h3 span{
+    color: cadetblue;
+    font-weight: bold;
+}
+table{
+    border: 5px solid white;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    text-align: center;
+    width: 85%;
+    margin: 10px 0 0 80px;
+}
+.head-table{
+    font-weight: bold;
+    color: cadetblue;
+}
+th, td {
+    padding: 15px;
+}
+tbody tr:nth-child(odd){
+    background-color: white;
+}
+
+tbody tr:hover{
+    background-color: black;
+    color: white;
+}
+
+#delete{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+#button{
+    margin-right: 50px;
+    margin-top: 20px;
+    float: right;
+}
+
+button {
+    background-color: cornflowerblue; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 16px;
+}
+button:hover {
+    background-color: darkslategrey;
+    color: black;
+}

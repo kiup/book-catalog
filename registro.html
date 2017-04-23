@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="registro.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <script>
+        //var authors = new Array();
+        //authors = ['Afghanistan','Albania','Algeria','Andorra','Angola','Antigua and Barbuda','Argentina','Armenia','Aruba','Australia','Austria','Azerbaijan'];
+        //localStorage.setItem('authors', JSON.stringify(authors));
+        console.log("afuera");
+        function autocomplete_author() {
+            console.log("NO escribe nadad");
+            console.log("No parece");
+            var object = document.getElementsByName('author');
+            console.log("1", object);
+        }
+        //autocomplete({source:JSON.parse(localStorage.getItem('authors')), minLenght:1, delay:0});
+    </script>
+</head>
+<body>
+
+<form id="registry" class="registry">
+    <h3>Registro de lotes de libros</h3>
+    <div id="book-data" class="formulario">
+        <div class="field">
+            <label for="title">T&iacute;tulo:</label>
+            <input type="text" id="title" name="title" placeholder="t&iacute;tulo">
+        </div>
+        <div class="field">
+            <label for="author">Autor:</label>
+            <input type="text" id="author" name="author" placeholder="autor">
+        </div>
+
+        <div class="field">
+            <label for="editorial">Editorial:</label>
+            <input type="text" id="editorial" name="editorial" placeholder="editorial" click="autocomplete_author()">
+        </div>
+        <button onclick="autocomplete_author()">AUTOCOMPLETE</button>
+        <div id="error"></div>
+    </div>
+</form>
+</body>
+</html>

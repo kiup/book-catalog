@@ -1,0 +1,21 @@
+body{
+    background-color: lightsteelblue;
+    font-family: Courier;
+}
+h3{
+    color: white;
+    text-align: left;
+    padding-bottom: 2%;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+}
+
+form.registry label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+div.field{
+    padding: 10px;
+    width: 29%;
+}
