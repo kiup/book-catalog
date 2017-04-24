@@ -1,20 +1,11 @@
 @media print{
-    #section{
-        visibility: hidden;
+    .not-printed{
         display: none;
+        visibility: hidden;
     }
     button{
-        visibility: hidden;
         display: none;
     }
-    #sectionprint{
-        display: inherit !important;
-        visibility: visible !important;
-    }
-}
-#sectionprint{
-    visibility: hidden;
-    display: none;
 }
 body{
     background-color: lightsteelblue;
@@ -54,14 +45,22 @@ tbody tr:hover{
     background-color: black;
     color: white;
 }
+thead td:hover{
+    background-color: black;
+    color: white;
+}
 
 #delete{
     width: 25px;
     height: 25px;
     text-align: center;
 }
-
-#button{
+#print{
+     margin-left: 50px;
+     margin-top: 20px;
+     float: left;
+ }
+#regresar{
     margin-right: 50px;
     margin-top: 20px;
     float: right;
